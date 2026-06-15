@@ -9,8 +9,11 @@ const btn = document.querySelector(".btn");
             if(!date){
                 error.innerHTML="Please enter the date";
             }else{
-                error.innerHTML=" ";
+
             let isdate = new Date(date);
+            console.log("button was clicked");
+            console.log("todays date is ",today);
+            console.log("date is ",isdate);
             let year = today.getFullYear() - isdate.getFullYear();
             let month = today.getMonth() - isdate.getMonth();
             let days = today.getDate() - isdate.getDate();
