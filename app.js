@@ -9,7 +9,7 @@ const btn = document.querySelector(".btn");
             if(!date){
                 error.innerHTML="Please enter the date";
             }else{
-
+                error.innerHTML=" ";
             let isdate = new Date(date);
            
             let year = today.getFullYear() - isdate.getFullYear();
